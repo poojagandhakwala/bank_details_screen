@@ -39,9 +39,9 @@ const Form = () => {
   };
 
   return (
-    <main className="w-full max-w-2xl mx-auto xl:ml-72 max-md:p-5 ">
-      <div className="max-md:mt-5 xl:mt-24">
-        <h1 className={`m-2 text-2xl font-poppins  font-semibold text-left`}>
+    <main className="w-full max-w-3xl mx-auto lg:ml-72 xl:ml-72 max-md:p-5 ">
+      <div className="max-md:mt-5 lg:mt-24 xl:mt-24">
+        <h1 className={`m-2 text-2xl font-poppins font-semibold text-left`}>
           Update Bank Details
         </h1>
         <p className="text-sm text-left m-2 ">
@@ -55,7 +55,6 @@ const Form = () => {
       <form className=" text-sm border-2 border-gray-200 rounded p-5 md:m-5 xl:w-full">
         <div className="md:flex md:items-center mb-6">
           <div className=" md:w-2/3 ">
-            
             <label
               className="block text-gray-700 font-bold text-left mb-1 md:mb-0 pr-4 uppercase"
               htmlFor="inline-name"
@@ -64,7 +63,6 @@ const Form = () => {
             </label>
           </div>
           <div className=" md:w-2/3">
-            {/* md:w-2/3 */}
             <input
               className={` appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 
               text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-success-700`}
@@ -79,7 +77,6 @@ const Form = () => {
         </div>
         <div className="md:flex md:items-center mb-6">
           <div className=" md:w-2/3">
-            
             <label
               className="block text-gray-700 font-bold text-left mb-1 md:mb-0 pr-4 uppercase"
               htmlFor="inline-number"
@@ -88,7 +85,6 @@ const Form = () => {
             </label>
           </div>
           <div className=" md:w-2/3">
-            {/* md:w-2/3 */}
             <input
               className="appearance-none border-2 border-gray-200 rounded w-full 
               py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-success-700"
@@ -103,7 +99,6 @@ const Form = () => {
         </div>
         <div className="md:flex md:items-center mb-6 ">
           <div className="md:w-2/3">
-            
             <label
               className="block text-gray-700 font-bold text-left mb-1 md:mb-0 pr-4 uppercase"
               htmlFor="inline-code"
@@ -112,7 +107,6 @@ const Form = () => {
             </label>
           </div>
           <div className=" md:w-2/3">
-            {/* md:w-2/3 */}
             <input
               className="appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 
               text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-success-700"
@@ -127,7 +121,6 @@ const Form = () => {
         </div>
         <div className="md:flex md:items-center mb-6">
           <div className=" md:w-2/3">
-            
             <label
               className="block text-gray-700 font-bold text-left mb-1 md:mb-0 pr-4 uppercase"
               htmlFor="inline-bank-name"
@@ -136,7 +129,6 @@ const Form = () => {
             </label>
           </div>
           <div className=" md:w-2/3">
-            {/* md:w-2/3 */}
             <input
               className="appearance-none border-2 border-gray-200 rounded w-full 
               py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-success-700"
@@ -151,7 +143,6 @@ const Form = () => {
         </div>
         <div className="md:flex md:items-center mb-6 ">
           <div className=" md:w-2/3">
-            
             <label
               className="block text-gray-700 font-bold text-left mb-1 md:mb-0 pr-4 uppercase"
               htmlFor="inline-name"
@@ -160,7 +151,6 @@ const Form = () => {
             </label>
           </div>
           <div className=" md:w-2/3">
-            {/* md:w-2/3 */}
             <input
               className="appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 
               text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-success-700"
@@ -175,7 +165,6 @@ const Form = () => {
         </div>
         <div className="md:flex md:items-center mb-6">
           <div className=" md:w-2/3">
-            
             <label
               className="block text-gray-700 font-bold text-left mb-1 md:mb-0 pr-4 uppercase"
               htmlFor="inline-brranch-name"
@@ -184,7 +173,6 @@ const Form = () => {
             </label>
           </div>
           <div className=" md:w-2/3">
-            {/* md:w-2/3 */}
             <input
               className="appearance-none border-2 border-gray-200 rounded w-full 
               py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-success-700"
@@ -199,7 +187,6 @@ const Form = () => {
         </div>
         <div className="md:flex md:items-center mb-6 ">
           <div className=" md:w-2/3">
-            
             <label
               className="block text-gray-700 font-bold text-left mb-1 md:mb-0 pr-4 uppercase"
               htmlFor="inline-name"
@@ -208,7 +195,6 @@ const Form = () => {
             </label>
           </div>
           <div className=" md:w-2/3">
-            {/* md:w-2/3 */}
             <input
               className="appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 
               text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-success-700"
@@ -223,7 +209,6 @@ const Form = () => {
         </div>
         <div className="md:flex md:items-center mb-6">
           <div className=" md:w-2/3">
-            
             <label
               className="block text-gray-700 font-bold text-left mb-1 md:mb-0 pr-4 uppercase"
               htmlFor="inline-consent"
@@ -236,14 +221,11 @@ const Form = () => {
               py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-success-700 
               md:w-2/3"
           >
-            {/* md:w-2/3 */}
             <input
               className="inline mx-2 -mt-12 max-md:-mt-20"
               id="inline-consent"
-              type="checkbox"
-              // value={formData.consent}
+              type={`${isSaved ? "hidden" : "checkbox"}`}
               onChange={(e) => setFormData({ consent: e.target.checked })}
-              // disabled={isDisabled}
             />
             <p className=" text-justify ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vero

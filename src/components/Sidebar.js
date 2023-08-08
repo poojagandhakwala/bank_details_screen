@@ -8,20 +8,20 @@ const Sidebar = () => {
     <div>
       <header>
         {/* Sidenav */}
-        {(showSidebar || window.innerWidth > 700) && (
+        {(showSidebar || window.innerWidth > 768) && (
           <nav
             id="sidenav-1"
             className={`fixed left-0  z-[1035] h-screen text-md overflow-hidden 
-          bg-white border-t-2 border-r-2 border-b-2 dark:bg-zinc-800 
-          xl:data-[te-sidenav-hidden='false']:translate-x-0  
-          ${
-            window.innerWidth < 700
-              ? showSidebar
-                ? "translate-x-0 top-10 w-screen"
-                : ""
-              : "top-14 w-60"
-          }
-          `}
+            bg-white border-t-2 border-r-2 border-b-2 dark:bg-zinc-800 
+            xl:data-[te-sidenav-hidden='false']:translate-x-0  
+            ${
+              window.innerWidth < 768
+                ? showSidebar
+                  ? "translate-x-0 top-10 w-screen"
+                  : ""
+                : "top-14 w-60"
+            }
+            `}
             data-te-sidenav-init
             data-te-sidenav-hidden="false"
             data-te-sidenav-mode-breakpoint-over={0}
@@ -29,6 +29,7 @@ const Sidebar = () => {
             data-te-sidenav-content="#content"
             data-te-sidenav-accordion="true"
           >
+            <i className="fa-solid fa-arrow-left ml-2 mr-96 lg:flex xl:flex hidden" />
             <ul
               className="relative m-0 list-none px-[0.2rem] hover:text-success-600 focus:bg-success-400/10 
               focus:text-success-600"
@@ -57,14 +58,16 @@ const Sidebar = () => {
                     className="absolute right-0 ml-auto mr-[0.8rem] transition-transform duration-300 motion-reduce:transition-none [&>svg]:h-3 [&>svg]:w-3 [&>svg]:fill-gray-600 group-hover:[&>svg]:fill-primary-600 group-focus:[&>svg]:fill-primary-600 group-active:[&>svg]:fill-primary-600 group-[te-sidenav-state-active]:[&>svg]:fill-primary-600 dark:[&>svg]:fill-gray-300"
                     data-te-sidenav-rotate-icon-ref
                   >
-                    <i className="fa-solid fa-angle-right text-gray-500 
+                    <i
+                      className="fa-solid fa-angle-right text-gray-500 
                     group-focus:text-success-600
-                    group-hover:text-success-600" />
+                    group-hover:text-success-600"
+                    />
                   </span>
                 </a>
               </li>
-              <li className="relative group border-gray max-md:border-b-2 ">              
-              <a
+              <li className="relative group border-gray max-md:border-b-2 ">
+                <a
                   className="group flex h-12 cursor-pointer items-center 
                   truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-800 max-md:font-bold
                   hover:text-success-600 focus:bg-success-400/10 
@@ -86,9 +89,11 @@ const Sidebar = () => {
                     className="absolute right-0 ml-auto mr-[0.8rem] transition-transform duration-300 motion-reduce:transition-none [&>svg]:h-3 [&>svg]:w-3 [&>svg]:fill-gray-600 group-hover:[&>svg]:fill-primary-600 group-focus:[&>svg]:fill-primary-600 group-active:[&>svg]:fill-primary-600 group-[te-sidenav-state-active]:[&>svg]:fill-primary-600 dark:[&>svg]:fill-gray-300"
                     data-te-sidenav-rotate-icon-ref
                   >
-                    <i className="fa-solid fa-angle-right  text-gray-500 
+                    <i
+                      className="fa-solid fa-angle-right  text-gray-500 
                     group-focus:text-success-600
-                    group-hover:text-success-600" />
+                    group-hover:text-success-600"
+                    />
                   </span>
                 </a>
               </li>
@@ -115,14 +120,16 @@ const Sidebar = () => {
                     className="absolute right-0 ml-auto mr-[0.8rem] transition-transform duration-300 motion-reduce:transition-none [&>svg]:h-3 [&>svg]:w-3 [&>svg]:fill-gray-600 group-hover:[&>svg]:fill-primary-600 group-focus:[&>svg]:fill-primary-600 group-active:[&>svg]:fill-primary-600 group-[te-sidenav-state-active]:[&>svg]:fill-primary-600 dark:[&>svg]:fill-gray-300"
                     data-te-sidenav-rotate-icon-ref
                   >
-                    <i className="fa-solid fa-angle-right text-gray-500 
+                    <i
+                      className="fa-solid fa-angle-right text-gray-500 
                     group-focus:text-success-600
-                    group-hover:text-success-600" />
+                    group-hover:text-success-600"
+                    />
                   </span>
                 </a>
               </li>
               <li className="relative group border-gray max-md:border-b-2 ">
-              <a
+                <a
                   className="group flex h-12 cursor-pointer items-center 
                   truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-800 max-md:font-bold
                   hover:text-success-600 focus:bg-success-400/10 
@@ -134,17 +141,21 @@ const Sidebar = () => {
                   data-te-sidenav-link-ref
                 >
                   <span className="mr-4 [&>svg]:h-3.5 [&>svg]:w-3.5 [&>svg]:fill-gray-700 [&>svg]:transition [&>svg]:duration-300 [&>svg]:ease-linear group-hover:[&>svg]:fill-primary-600 group-focus:[&>svg]:fill-primary-600 group-active:[&>svg]:fill-primary-600 group-[te-sidenav-state-active]:[&>svg]:fill-primary-600 motion-reduce:[&>svg]:transition-none dark:[&>svg]:fill-gray-300 dark:group-hover:[&>svg]:fill-gray-300 ">
-                    <i className="fa-solid fa-bank text-gray-700 
-                      focus:bg-success-400/10 group-focus:text-success-600 group-hover:text-success-600" />
+                    <i
+                      className="fa-solid fa-bank text-gray-700 
+                      focus:bg-success-400/10 group-focus:text-success-600 group-hover:text-success-600"
+                    />
                   </span>
                   <span>Bank Details</span>
                   <span
                     className="absolute right-0 ml-auto mr-[0.8rem] transition-transform duration-300 motion-reduce:transition-none [&>svg]:h-3 [&>svg]:w-3 [&>svg]:fill-gray-600 group-hover:[&>svg]:fill-primary-600 group-focus:[&>svg]:fill-primary-600 group-active:[&>svg]:fill-primary-600 group-[te-sidenav-state-active]:[&>svg]:fill-primary-600 dark:[&>svg]:fill-gray-300"
                     data-te-sidenav-rotate-icon-ref
                   >
-                    <i className="fa-solid fa-angle-right text-gray-500 
+                    <i
+                      className="fa-solid fa-angle-right text-gray-500 
                     group-focus:text-success-600
-                    group-hover:text-success-600" />
+                    group-hover:text-success-600"
+                    />
                   </span>
                 </a>
               </li>
@@ -172,9 +183,9 @@ const Sidebar = () => {
               aria-expanded="true"
               onClick={() => setShowSidebar(!showSidebar)}
             >
-              <span className="block [&>svg]:h-5 [&>svg]:w-5 [&>svg]:text-black">
-                {window.innerWidth < 700 ? (
-                  !showSidebar ? (
+              <span className="block [&>svg]:h-5 [&>svg]:w-5 [&>svg]:text-black text-black">
+                {window.innerWidth < 768 &&
+                  (!showSidebar ? (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -189,46 +200,12 @@ const Sidebar = () => {
                       />
                     </svg>
                   ) : (
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={512}
-                      height={512}
-                      viewBox="0 0 512 512"
-                    >
-                      <polyline
-                        points="244 400 100 256 244 112"
-                        style={{
-                          fill: "none",
-                          stroke: "#000",
-                          strokeLinecap: "round",
-                          strokeLinejoin: "round",
-                          strokeWidth: 48,
-                        }}
-                      />
-                      <line
-                        x1={120}
-                        y1={256}
-                        x2={412}
-                        y2={256}
-                        style={{
-                          fill: "none",
-                          stroke: "#000",
-                          strokeLinecap: "round",
-                          strokeLinejoin: "round",
-                          strokeWidth: 48,
-                        }}
-                      />
-                    </svg>
-                  )
-                ) : (
-                  <>
-                  
-                  </>
-                )}
+                    <i className="fa-solid fa-arrow-left "/>
+
+                  ))}
               </span>
             </button>
             {/* Navbar */}
-
             <Navbar />
           </div>
         </nav>

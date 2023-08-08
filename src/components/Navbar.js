@@ -13,7 +13,7 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
-      <ul className="flex flex-wrap justify-between xl:space-x-8 sm:pl-4 xl:pl-20">
+      <ul className="flex flex-wrap justify-between lg:space-x-8 xl:space-x-8 sm:pl-4 lg:pl-16 xl:pl-20">
         <li className="-mb-4 mr-1 px-2">
           <a
             className="bg-white inline-block border-[#2E8362] border-b-4 
