@@ -39,8 +39,8 @@ const Form = () => {
   };
 
   return (
-    <main className="w-full max-w-2xl mx-auto lg:ml-72 max-md:p-5 ">
-      <div className="max-md:mt-1 max-xl:mt-24">
+    <main className="w-full max-w-2xl mx-auto xl:ml-72 max-md:p-5 ">
+      <div className="max-md:mt-5 xl:mt-24">
         <h1 className={`m-2 text-2xl font-poppins  font-semibold text-left`}>
           Update Bank Details
         </h1>
@@ -52,10 +52,10 @@ const Form = () => {
         </p>
       </div>
 
-      <form className=" text-sm border-2 border-gray-200 rounded p-5 md:m-5">
+      <form className=" text-sm border-2 border-gray-200 rounded p-5 md:m-5 xl:w-full">
         <div className="md:flex md:items-center mb-6">
-          <div className=" md:w-2/3">
-            {/* md:w-1/3 */}
+          <div className=" md:w-2/3 ">
+            
             <label
               className="block text-gray-700 font-bold text-left mb-1 md:mb-0 pr-4 uppercase"
               htmlFor="inline-name"
@@ -79,7 +79,7 @@ const Form = () => {
         </div>
         <div className="md:flex md:items-center mb-6">
           <div className=" md:w-2/3">
-            {/* md:w-1/3 */}
+            
             <label
               className="block text-gray-700 font-bold text-left mb-1 md:mb-0 pr-4 uppercase"
               htmlFor="inline-number"
@@ -103,7 +103,7 @@ const Form = () => {
         </div>
         <div className="md:flex md:items-center mb-6 ">
           <div className="md:w-2/3">
-            {/* md:w-1/3 */}
+            
             <label
               className="block text-gray-700 font-bold text-left mb-1 md:mb-0 pr-4 uppercase"
               htmlFor="inline-code"
@@ -127,7 +127,7 @@ const Form = () => {
         </div>
         <div className="md:flex md:items-center mb-6">
           <div className=" md:w-2/3">
-            {/* md:w-1/3 */}
+            
             <label
               className="block text-gray-700 font-bold text-left mb-1 md:mb-0 pr-4 uppercase"
               htmlFor="inline-bank-name"
@@ -151,7 +151,7 @@ const Form = () => {
         </div>
         <div className="md:flex md:items-center mb-6 ">
           <div className=" md:w-2/3">
-            {/* md:w-1/3 */}
+            
             <label
               className="block text-gray-700 font-bold text-left mb-1 md:mb-0 pr-4 uppercase"
               htmlFor="inline-name"
@@ -175,7 +175,7 @@ const Form = () => {
         </div>
         <div className="md:flex md:items-center mb-6">
           <div className=" md:w-2/3">
-            {/* md:w-1/3 */}
+            
             <label
               className="block text-gray-700 font-bold text-left mb-1 md:mb-0 pr-4 uppercase"
               htmlFor="inline-brranch-name"
@@ -199,7 +199,7 @@ const Form = () => {
         </div>
         <div className="md:flex md:items-center mb-6 ">
           <div className=" md:w-2/3">
-            {/* md:w-1/3 */}
+            
             <label
               className="block text-gray-700 font-bold text-left mb-1 md:mb-0 pr-4 uppercase"
               htmlFor="inline-name"
@@ -223,7 +223,7 @@ const Form = () => {
         </div>
         <div className="md:flex md:items-center mb-6">
           <div className=" md:w-2/3">
-            {/* md:w-1/3 */}
+            
             <label
               className="block text-gray-700 font-bold text-left mb-1 md:mb-0 pr-4 uppercase"
               htmlFor="inline-consent"

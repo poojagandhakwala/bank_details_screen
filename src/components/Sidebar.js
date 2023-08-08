@@ -11,7 +11,7 @@ const Sidebar = () => {
         {(showSidebar || window.innerWidth > 700) && (
           <nav
             id="sidenav-1"
-            className={`fixed left-0  z-[1035] h-screen  overflow-hidden 
+            className={`fixed left-0  z-[1035] h-screen text-md overflow-hidden 
           bg-white border-t-2 border-r-2 border-b-2 dark:bg-zinc-800 
           xl:data-[te-sidenav-hidden='false']:translate-x-0  
           ${
@@ -34,23 +34,22 @@ const Sidebar = () => {
               focus:text-success-600"
               data-te-sidenav-menu-ref
             >
-              <li className="relative group-hover:text-success-600">
+              <li className="relative group border-gray max-md:border-b-2 ">
                 <a
                   className="group flex h-12 cursor-pointer items-center 
-                  truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-800 
-                  font-bold hover:text-success-600 focus:bg-success-400/10 
+                  truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-800 max-md:font-bold 
+                  hover:text-success-600 focus:bg-success-400/10 
                   focus:text-success-600
                   outline-none transition duration-300 ease-linear 
-                  focus:outline-none data-[te-sidenav-state-active]:text-primary-600 
-                  data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none 
-                  "
+                  focus:outline-none data-[te-sidenav-state-active]:text-sucess-600 
+                  data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none"
                   href="#!"
                   data-te-sidenav-link-ref
                 >
                   <span className="mr-4 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:fill-gray-700 [&>svg]:transition [&>svg]:duration-300 [&>svg]:ease-linear group-hover:[&>svg]:fill-primary-600 group-focus:[&>svg]:fill-primary-600 group-active:[&>svg]:fill-primary-600 group-[te-sidenav-state-active]:[&>svg]:fill-primary-600 motion-reduce:[&>svg]:transition-none dark:[&>svg]:fill-gray-300 dark:group-hover:[&>svg]:fill-gray-300 ">
                     <i
-                      className="fa-solid fa-grip text-gray-700 hover:text-success-600 
-                      focus:bg-success-400/10 focus:text-success-600"
+                      className="fa-solid fa-grip text-gray-700 
+                      focus:bg-success-400/10 group-focus:text-success-600 group-hover:text-success-600"
                     />
                   </span>
                   <span>My Dashboard</span>
@@ -58,28 +57,28 @@ const Sidebar = () => {
                     className="absolute right-0 ml-auto mr-[0.8rem] transition-transform duration-300 motion-reduce:transition-none [&>svg]:h-3 [&>svg]:w-3 [&>svg]:fill-gray-600 group-hover:[&>svg]:fill-primary-600 group-focus:[&>svg]:fill-primary-600 group-active:[&>svg]:fill-primary-600 group-[te-sidenav-state-active]:[&>svg]:fill-primary-600 dark:[&>svg]:fill-gray-300"
                     data-te-sidenav-rotate-icon-ref
                   >
-                    <i className="fa-solid fa-angle-right text-gray-500" />
+                    <i className="fa-solid fa-angle-right text-gray-500 
+                    group-focus:text-success-600
+                    group-hover:text-success-600" />
                   </span>
                 </a>
               </li>
-              <li className="relative">
-                <a
+              <li className="relative group border-gray max-md:border-b-2 ">              
+              <a
                   className="group flex h-12 cursor-pointer items-center 
-                  truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-800 
-                  font-bold  hover:text-success-600 focus:bg-success-400/10 
+                  truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-800 max-md:font-bold
+                  hover:text-success-600 focus:bg-success-400/10 
                   focus:text-success-600
                   outline-none transition duration-300 ease-linear 
-                  focus:outline-none active:bg-primary-400/10 
-                  active:text-primary-600 active:outline-none data-[te-sidenav-state-active]:text-primary-600 
-                  data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none 
-                  "
+                  focus:outline-none data-[te-sidenav-state-active]:text-sucess-600 
+                  data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none"
                   href="#!"
                   data-te-sidenav-link-ref
                 >
                   <span className="mr-4 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:fill-gray-700 [&>svg]:transition [&>svg]:duration-300 [&>svg]:ease-linear group-hover:[&>svg]:fill-primary-600 group-focus:[&>svg]:fill-primary-600 group-active:[&>svg]:fill-primary-600 group-[te-sidenav-state-active]:[&>svg]:fill-primary-600 motion-reduce:[&>svg]:transition-none dark:[&>svg]:fill-gray-300 dark:group-hover:[&>svg]:fill-gray-300 ">
                     <i
-                      className="fa-solid fa-link text-gray-700 hover:text-success-600 
-                      focus:bg-success-400/10 focus:text-success-600"
+                      className="fa-solid fa-link text-gray-700 
+                      focus:bg-success-400/10 group-focus:text-success-600 group-hover:text-success-600"
                     />
                   </span>
                   <span>TOTM Links</span>
@@ -87,28 +86,28 @@ const Sidebar = () => {
                     className="absolute right-0 ml-auto mr-[0.8rem] transition-transform duration-300 motion-reduce:transition-none [&>svg]:h-3 [&>svg]:w-3 [&>svg]:fill-gray-600 group-hover:[&>svg]:fill-primary-600 group-focus:[&>svg]:fill-primary-600 group-active:[&>svg]:fill-primary-600 group-[te-sidenav-state-active]:[&>svg]:fill-primary-600 dark:[&>svg]:fill-gray-300"
                     data-te-sidenav-rotate-icon-ref
                   >
-                    <i className="fa-solid fa-angle-right  text-gray-500 " />
+                    <i className="fa-solid fa-angle-right  text-gray-500 
+                    group-focus:text-success-600
+                    group-hover:text-success-600" />
                   </span>
                 </a>
               </li>
-              <li className="relative focus:text-success-600">
+              <li className="relative group border-gray max-md:border-b-2 ">
                 <a
                   className="group flex h-12 cursor-pointer items-center 
-                  truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-800 
-                  font-bold  hover:text-success-600 focus:bg-success-400/10 
+                  truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-800 max-md:font-bold
+                  hover:text-success-600 focus:bg-success-400/10 
                   focus:text-success-600
                   outline-none transition duration-300 ease-linear 
-                  focus:outline-none active:bg-primary-400/10 
-                  active:text-primary-600 active:outline-none data-[te-sidenav-state-active]:text-primary-600 
-                  data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none 
-                  "
+                  focus:outline-none data-[te-sidenav-state-active]:text-sucess-600 
+                  data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none"
                   href="#!"
                   data-te-sidenav-link-ref
                 >
                   <span className="mr-4 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:fill-gray-700 [&>svg]:transition [&>svg]:duration-300 [&>svg]:ease-linear group-hover:[&>svg]:fill-primary-600 group-focus:[&>svg]:fill-primary-600 group-active:[&>svg]:fill-primary-600 group-[te-sidenav-state-active]:[&>svg]:fill-primary-600 motion-reduce:[&>svg]:transition-none dark:[&>svg]:fill-gray-300 dark:group-hover:[&>svg]:fill-gray-300 ">
                     <i
-                      className="fa-solid fa-file-lines text-gray-700 hover:text-success-600 
-                      focus:bg-success-400/10 focus:text-success-600"
+                      className="fa-solid fa-file-lines text-gray-700 
+                      focus:bg-success-400/10 group-focus:text-success-600 group-hover:text-success-600"
                     />
                   </span>
                   <span>Daily Summary</span>
@@ -116,33 +115,36 @@ const Sidebar = () => {
                     className="absolute right-0 ml-auto mr-[0.8rem] transition-transform duration-300 motion-reduce:transition-none [&>svg]:h-3 [&>svg]:w-3 [&>svg]:fill-gray-600 group-hover:[&>svg]:fill-primary-600 group-focus:[&>svg]:fill-primary-600 group-active:[&>svg]:fill-primary-600 group-[te-sidenav-state-active]:[&>svg]:fill-primary-600 dark:[&>svg]:fill-gray-300"
                     data-te-sidenav-rotate-icon-ref
                   >
-                    <i className="fa-solid fa-angle-right text-gray-500 " />
+                    <i className="fa-solid fa-angle-right text-gray-500 
+                    group-focus:text-success-600
+                    group-hover:text-success-600" />
                   </span>
                 </a>
               </li>
-              <li className="relative">
-                <a
+              <li className="relative group border-gray max-md:border-b-2 ">
+              <a
                   className="group flex h-12 cursor-pointer items-center 
-                  truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-800 
-                  font-bold  hover:text-success-600 focus:bg-success-400/10 
+                  truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-800 max-md:font-bold
+                  hover:text-success-600 focus:bg-success-400/10 
                   focus:text-success-600
                   outline-none transition duration-300 ease-linear 
-                  focus:outline-none active:bg-primary-400/10 
-                  active:text-primary-600 active:outline-none data-[te-sidenav-state-active]:text-primary-600 
-                  data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none 
-                  "
+                  focus:outline-none data-[te-sidenav-state-active]:text-sucess-600 
+                  data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none"
                   href="#!"
                   data-te-sidenav-link-ref
                 >
                   <span className="mr-4 [&>svg]:h-3.5 [&>svg]:w-3.5 [&>svg]:fill-gray-700 [&>svg]:transition [&>svg]:duration-300 [&>svg]:ease-linear group-hover:[&>svg]:fill-primary-600 group-focus:[&>svg]:fill-primary-600 group-active:[&>svg]:fill-primary-600 group-[te-sidenav-state-active]:[&>svg]:fill-primary-600 motion-reduce:[&>svg]:transition-none dark:[&>svg]:fill-gray-300 dark:group-hover:[&>svg]:fill-gray-300 ">
-                    <i className="fa-solid fa-bank text-gray-500" />
+                    <i className="fa-solid fa-bank text-gray-700 
+                      focus:bg-success-400/10 group-focus:text-success-600 group-hover:text-success-600" />
                   </span>
                   <span>Bank Details</span>
                   <span
                     className="absolute right-0 ml-auto mr-[0.8rem] transition-transform duration-300 motion-reduce:transition-none [&>svg]:h-3 [&>svg]:w-3 [&>svg]:fill-gray-600 group-hover:[&>svg]:fill-primary-600 group-focus:[&>svg]:fill-primary-600 group-active:[&>svg]:fill-primary-600 group-[te-sidenav-state-active]:[&>svg]:fill-primary-600 dark:[&>svg]:fill-gray-300"
                     data-te-sidenav-rotate-icon-ref
                   >
-                    <i className="fa-solid fa-angle-right text-gray-500" />
+                    <i className="fa-solid fa-angle-right text-gray-500 
+                    group-focus:text-success-600
+                    group-hover:text-success-600" />
                   </span>
                 </a>
               </li>
@@ -219,7 +221,9 @@ const Sidebar = () => {
                     </svg>
                   )
                 ) : (
-                  <></>
+                  <>
+                  
+                  </>
                 )}
               </span>
             </button>
